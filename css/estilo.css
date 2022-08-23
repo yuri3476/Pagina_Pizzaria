@@ -19,14 +19,14 @@ header{
 }
 
 h3{
-	font-size: 1.9rem;
+	font-size: 3rem;
 	font-family: candara, arial;
 	margin: 0;
 	padding: 5px;
 }
 
 h4{
-	font-size: 1rem;
+	font-size: 1.6rem;
 	font-family: candara, arial;
 	margin: 0;
 	padding-left: 5px;
@@ -76,12 +76,26 @@ h1{
 
 }
 
+@media(min-width: 320px) and (max-width: 450px){
+	h1{
+	font-family: candara, arial;
+	text-align: left;
+	padding-top: 10px;
+	font-size: 3.0rem;
+	color: rgba(255, 0, 0, 1.0);
+	text-shadow: 2px 2px 2px #000;
+
+}
+
+}
+
 h2{
 	font-family: candara, arial;
 	text-align: center;
 	padding-top: 10px;
-	font-size: 1.9rem;
-
+	font-size: 2.2rem;
+	color: rgba(255, 0, 0, 1.0);
+	text-shadow: 1px 1px #000;
 }
 
 .texto-footer{
@@ -93,14 +107,32 @@ h2{
 }
 
 .compre{
-	background-color: rgba(255, 255, 0, 1.0);
-	width: 150px;
-	height: 100px;
+	background-color: rgba(255, 255, 0, 0.9);
+	width: 18rem;
+	height: 12rem;
 	position: fixed;
 	right: 0;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 3%;
 	z-index: 1;
+	border-radius: 30px;
+	border: solid #fff;
+}
+
+@media(min-width: 320px) and (max-width: 450px){
+	.compre{
+	background-color: rgba(255, 255, 0, 0.9);
+	width: 35%;
+	height: 14rem;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	margin-top: 3%;
+	z-index: 1;
+	border-radius: 30px;
+	border: solid #fff;
+}
+
 }
 
 h5{
@@ -115,10 +147,12 @@ button{
 	font-family: candara, arial;
 	text-align: center;
 	padding: 5px;
-	font-size: 1.9rem;
+	font-size: 2rem;
 	background-color: rgba(50, 205, 50, 1.0);
 	color: #fff;
 	border: solid;
+	border-radius: 20px;
+	width: 90%;
 }
 
 #grid-container{
@@ -131,7 +165,7 @@ button{
 .grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
-	grid-gap: 1px;
+	grid-gap: 2px;
 	max-width: 1200px;
 	margin: 0 auto;
 
@@ -192,3 +226,16 @@ a:hover{
 
 }
 
+.imagem-grid{
+	width: 22rem;
+	height: 14rem;
+	border-radius: 10%;
+}
+
+.texto-grid{
+	font-family: arial;
+	font-size: 1.7rem;
+	text-align: center;
+	font-weight: bold;
+
+}
